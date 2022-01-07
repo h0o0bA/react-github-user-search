@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import GithubeState from "./Components/Context/GitHub/GithubState";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <GithubeState>
     <App />
-  </React.StrictMode>,
+  </GithubeState>,
   document.getElementById("root")
 );

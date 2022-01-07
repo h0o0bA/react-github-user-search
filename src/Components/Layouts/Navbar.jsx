@@ -22,7 +22,13 @@ const NavbarComp = () => {
 
   return (
     <Fragment>
-      <Navbar className="Navbar" expand="lg" sticky="top">
+      <Navbar
+        className="Navbar"
+        expand="lg"
+        sticky="top"
+        bg="dark"
+        variant="dark"
+      >
         <Container>
           <OverlayTrigger
             placement="bottom"
