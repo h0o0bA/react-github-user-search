@@ -8,39 +8,37 @@ import GithubContext from "../Context/GitHub/GithubContext";
 import Spinner from "../Layouts/Spinner";
 import Row from "react-bootstrap/Row";
 
-const UsersItems = (props) => {
-  const githubState = useContext(GithubContext);
-  const {
-    user: {
-      login,
-      name,
-      avatar_url,
-      followers,
-      following,
-      location,
-      email,
-      bio,
-      company,
-      blog,
-      public_repos,
-      public_gists,
-      html_url,
-      hireable,
-    },
-    searchUser,
-    loading,
-    getRepos,
-    joined,
-    statusCode,
-  } = githubState;
+// const UsersItems = (props) => {
+//   const githubState = useContext(GithubContext);
 
+const UsersItems = ({
+  user: {
+    login,
+    name,
+    avatar_url,
+    followers,
+    following,
+    location,
+    email,
+    bio,
+    company,
+    blog,
+    public_repos,
+    public_gists,
+    html_url,
+    hireable,
+  },
+  searchUser,
+  loading,
+  getRepos,
+  joined,
+  statusCode,
+}) => {
   // useEffect(() => {
   //   searchUser(match.params.login);
   //   getRepos(match.params.login);
   //   // eslint-disable-next-line
   // }, []);
-
-  console.log(login);
 
   const GithubUrl = () => {
     window.open(`https://github.com/${login}`);
