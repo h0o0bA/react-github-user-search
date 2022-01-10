@@ -1,4 +1,4 @@
-**Github User Search App**
+**Github User Search App** is a simple react app using: react, react-dom, react-bootstrap, react-router-bootstrap, axios and Github Api.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
